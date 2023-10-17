@@ -1,0 +1,16 @@
+/* # stands for id and . stands for class */
+
+#first{
+background-color: antiquewhite;
+}
+#second{
+background-color: rgb(152, 152, 86);
+}
+
+.red{
+ color:rgb(166, 58, 58);
+}
+
+.bg-yellow{
+color:rgb(77, 143, 200)
+}

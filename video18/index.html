@@ -1,0 +1,57 @@
+<!-- Multiple classes can be given to single element-->
+
+
+<!-- *********MARGIN COLLAPSE***** 
+Margin collapse says that if margin of two elemnts are overlapping then maximum margin is apllied among them, only once.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css box model</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box{
+            background-color: rgb(234, 103, 103);
+        }
+        .box1{
+            color:antiquewhite;
+            padding:7px;
+            margin: 10px;
+            border:solid black 3px;
+            height: 200px;
+            /*box-sizing: border-box; it is the size of box including borer and padding but not margin,so if we write this,that means total 200 is including (context+border+padding),but if we only write hegiht and not box-sizing then 200 height is of only content excluding border and pdding */
+            box-sizing: border-box;
+
+        }
+        .box2{
+            color:yellow;
+            color:antiquewhite;
+            padding:7px;
+            margin: 10px;
+            border:solid blueviolet 5px;
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+        .css{
+            padding:5px;
+            margin:5px;
+            background-color: aquamarine;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="css">
+        <a href="https://www.codewithharry.com/tutorial/css-box-model/" target="_blank">CSS Box Tut Code with harry</a>
+    </div>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+</body>
+</html>

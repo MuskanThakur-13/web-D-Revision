@@ -1,0 +1,79 @@
+<!--Google fonts-> for different fonts
+1)First go to ggogle fonts->select the font->click on right side on plus symbol->click on import and cop that and paste in style->then copy font family from google fonts and paste it wherever you want to apply.
+
+2)or we can use link tag for applyimng fonts from google font->apply link tagin head tag  below titles.
+3)Use link or import anyone
+4)you can add multiple fonts at one time from google fonts,just select all the fonts at once that you want
+5)line height will give spacing between lines
+6)text transform is used for uppercase or lower case
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Pixelify+Sans&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+        /*Added multiple fonts ek saath
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Young+Serif&family=Yuji+Hentaigana+Akari&display=swap');
+        */
+
+        h1{
+            font-family: 'Pixelify Sans', sans-serif;
+            font-size: 50px;
+            text-align: center;
+        }
+        p{
+            font-family:Arial, Helvetica, sans-serif;
+            font-style:italic;
+            font-size: 20px;
+            text-decoration:underline;
+            text-decoration-color: rgb(14, 14, 200);
+            text-decoration-style: wavy;
+            text-decoration-thickness: 4px;
+            line-height: 3;
+          
+        }
+        .hello{
+            font-family: 'Libre Baskerville', serif;
+            text-decoration: none;
+            text-transform: lowercase;
+            text-indent: 45px;
+        
+        }
+        h2{
+            text-transform: capitalize;
+            text-decoration-line: underline;
+            text-decoration-color: aqua;
+            text-decoration-thickness: 7px;
+        }
+        .one{
+           border: 2px solid red; 
+           text-decoration: none;
+           width:145px;
+           /* text-overflow: ellipsis;
+           overflow: hidden; */
+            word-break:break-all
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+            Fonts
+        </h1>
+        <h2>capitilize will be used</h2>
+        <p>This is a video on fonts</p>
+        <p class="hello">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt ea quasi totam quidem odio vel similique mollitia veritatis, quam accusamus eius minus modi deleniti voluptate quaerat vitae, quo libero. Nostrum aspernatur quaerat quis commodi ullam iste facilis facere asperiores a ea ab, sapiente voluptates architecto quibusdam harum praesentium veniam doloribus. Nesciunt placeat animi alias asperiores eum.
+        </p>
+        <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ab expedita dignissimos nesciunt, provident ad. Tempore laudantium impedit, placeat id officiis qui dicta.</p>
+    </div>
+</body>
+</html>

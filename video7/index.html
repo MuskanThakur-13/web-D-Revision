@@ -1,0 +1,77 @@
+<!-- GET is used to request data from a specified resource.
+Some notes on GET requests:
+
+GET requests can be cached
+GET requests remain in the browser history
+GET requests can be bookmarked
+GET requests should never be used when dealing with sensitive data
+GET requests have length restrictions
+GET requests are only used to request data (not modify)
+
+
+Post request:-POST is used to send data to a server to create/update a resource.
+Some notes on POST requests:
+
+POST requests are never cached
+POST requests do not remain in the browser history
+POST requests cannot be bookmarked
+POST requests have no restrictions on data length
+Post is more secure and safer than get
+
+-->
+
+<!-- Pattern:-
+   pattern attribute specifies a regualar expression that the input must match to be filled
+
+   <input type="text" pattern="[a-zA-Z0-9]+">
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Forms and input tags</title>
+</head>
+<body>
+   <h1>Form to apply for Sigma Web D -TA</h1>
+
+   <form action="post">
+      <div>
+         <label for="username">Enter your Username</label> 
+         <input type="text required" id="username" name="username" placeholder="Enter your name"> <!-- Key value jo server ko jata hai vo is name attribute ke help se jata hai-->
+         <!-- A require attribute makes a field mandatory to fill out-->
+      </div>
+     <!-- we can also use br for line break but we prefer div for that instance-->
+      <div>
+         <label for="Male">Male</label> <!-- for and id mai same value honi chahiye tab hi select hoga,and name= gender dono ka same name diya hai taaki at a time ek hi select ho paaye-->
+         <input type="radio" id="Male" name="gender" value="Male">
+         <label for="Female">Female</label>
+         <input type="radio" id="Female" name="gender" value="Female">
+      </div>
+
+      <div>
+         <input type="checkbox" id="subscribers" name="subbscribe" value="yes">
+         <label for="subscribers">Subscribe to newsletter</label>
+      </div>
+
+      <div>
+         <label for="comments">Enter your Comments:-</label>
+         <br>
+         <textarea name="comment" id="comments" cols="50" rows=5"> </textarea>
+      </div>
+
+      <div>
+         <select name="Course" >
+            <option value="Web D">Web D</option>
+            <option value="Ml"> Machine Learning</option>
+            <option value="Data Analyst">Data Analyst</option>
+            <option value="Business Analyst">Business Analyst</option>
+         </select>
+      </div>
+      
+      </div>
+   </form>
+</body>
+</html>

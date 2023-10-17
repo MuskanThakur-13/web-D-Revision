@@ -1,0 +1,58 @@
+<!-- SEO stands for search engine optimization -->
+<!-- Google is a search engine,it will show all that pages which serves good user experience
+
+    Core web vitals are  also considered for a good user experience and these are:
+
+    1)CLS (Cumulative Layout shift)
+    CLS should be as min as possible for a good user experience,cls means when we click on a particular image and at that instance if another image gets loaded then we will accidentely end up clicking on that image instead of the previous one.
+
+    2)LCP (Largest contentful paint)
+    LCP metric reports the render time of the largest image or text block visible within the viewport,relative to when the page first started loading.
+    A good LCP score is 2.5 sec.
+
+    3)FID (First input Delay)
+    The time from when a user first interacts with your page (when they clicked a link, tapped on a button, and so on) to the time when the browser responds to that interaction.
+    This is important on pages where the user needs to do something, because this is the delay before the page becomes interactive.
+    For a good user experience sites should have a FID of 100 milliseconds or less.
+
+-->
+
+<!-- right click on any website and then click on inspect and go to lighthouse wher you can see report of your website and what changes you need to do -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a page which contains description about Muskan">
+    <title>Inline and Block Elements</title>
+    <!--Title should be meaningful as it reflects the content of the page,and when you search something on google the search will appear according to the title-->
+</head>
+
+<body>
+    <h1>Muskan's Website</h1>
+    <h2>Inline and Block Elements</h2>
+    <p>In web development, "inline" and "block" are two types of HTML elements that describe how elements are displayed on a web page and how they interact with other elements.</p>
+
+    <ol>
+
+        <li>Inline Elements:Inline elements are elements that flow within the content of a web page and do not start on a new line. They only take up as much width as necessary to contain their content. </li>
+        <ul>
+            <li>Examples: &lt; a &gt;, &lt; span &gt;, &lt; strong &gt; and &lt; img &gt;</li>
+            <li>You can place multiple inline elements side by side within the same line</li>
+        </ul>
+
+        <li>Block Elements:Block elements, on the other hand, start on a new line and create a "block" that takes up the full available width of their parent container by default.</li>
+        <ul>
+            <li>Examples:&lt; div &gt;,&lt; p &gt;,&lt; h1 &gt; to &lt; h6 &gt;,&lt; ul &gt;,&lt; ol &gt; and &lt; li &gt;</li>
+            <li>Block elements stack on top of each other vertically, creating a new block for each element, which
+            pushes subsequent elements to a new line</li>
+
+        </ul>
+    
+    </ol>
+
+</body>
+
+</html>

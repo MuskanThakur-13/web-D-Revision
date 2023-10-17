@@ -1,0 +1,94 @@
+<!-- For comments in CSS- /* write anything */ -->
+
+<!-- A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selector */
+        div{
+            background-color: antiquewhite;
+        }
+        /*class selector*/
+        .red{
+            background-color: rgb(113, 173, 225);
+        }
+        /*id selector*/
+        #green{
+            color: green;
+        }
+
+        /*child selector*/
+        /*div > p is used for p being the direct child of divDirect child*/
+        div > p{
+            color:blue;
+            background-color: aquamarine;
+        }
+
+        /* Descendant Selector*/
+        div p{
+            color:rgb(90, 47, 165);
+        }
+
+        /*Universal Selector*/
+        *{
+            margin: 10;
+            padding:10;
+        }
+        /*Pseudo Selector */
+        a:visited{
+            color:yellowgreen
+        }
+        a:link{
+            color:rgb(128, 0, 83);
+        }
+        a:active{
+            background-color: brown;
+        }
+        a:hover{
+            color: rgb(226, 162, 43);
+        }
+        /*Jaha jaah p apne parent ka first child hoga there this condition will be applied  */
+        p:first-child{
+            background-color: rgb(183, 109, 18);
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <!-- if you write div.one then automatically div will be created with class=one -->
+    <div class="one">
+        <main>
+            <p>I am first</p>
+            <p>I am second</p>
+        </main>
+    </div>
+    <div class="red">
+        i am div
+        <article>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eos architecto consequuntur omnis reiciendis recusandae culpa, voluptatum voluptas quibusdam praesentium est perferendis expedita dolorum perspiciatis nam ab totam delectus ea itaque dicta nobis quaerat! Nostrum porro cupiditate id, sed enim at minima et! Ab, placeat!
+            </p>
+        </article>
+    </div>
+
+    <div id="green">
+        I am another div
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe cupiditate aut inventore, iste nostrum fugit, sit esse maxime cumque odit aperiam? Velit, mollitia.</p>
+    </div>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <br>
+    <a href="https://www.facebook2.com">facebook</a>
+</body>
+</html>

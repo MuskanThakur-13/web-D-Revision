@@ -1,0 +1,37 @@
+<!-- In list two things are there:-
+1) Marker and( like 1,2,3 etc or bullet points)
+2)Content -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Lists using CSS</title>
+    <style>
+       
+        nav ul li{
+            list-style:georgian;
+            /* To replace marker with emoji */
+            list-style-type:"❤️"; /*For opening emoji press windos key+(.)key */
+            background-color: aqua; /* Here the marker are not included in the colour*/
+            list-style-position: inside;/* To include marker in the content of the list list style position is used
+            */
+            border:2px solid black;
+            
+            /* To replace marker with image */
+            /* list-style-image: url("marker_img.png"); */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    
+</body>
+</html>

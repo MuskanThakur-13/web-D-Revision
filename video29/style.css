@@ -3,36 +3,39 @@
     margin:0px;
 
 }
-.container{
-    padding:2px;
-    margin:15px;
-    border:2px solid black;
-    border-radius: 5px;
-    height:58vh;
-    width: 25%;
+body{
+    background-color: grey;
+    padding:45px;
+    display: flex;
 }
+.container{
+    background-color: white;
+    border-radius: 5px;
+    height:385px;
+    width: 294px;
+    margin:20px;
+    padding:3px;
 
+    
+}
 .image{
-    margin:4px;
+    padding:5px;
 }
 
 img{
     border-radius:5px ;
 }
+
 .sty{
-    margin-top: 7px;
+    margin-top: 3px;
+    
 }
 
-.feat{
-    border: 1px solid black;
+.sty span{
+    border: 1px solid grey;
     border-radius: 10px;
     margin:6px;
     padding:0px 6px;
-}
-
-h2{
-    margin:6px;
-    padding:2px;
 }
 
 .cont{
@@ -40,17 +43,28 @@ h2{
     padding:2px;
 }
 
+.cont h2{
+    margin-bottom:4px;
+}
+
+.cont p{
+    color:grey;
+}
+
 .parent{
     text-align: center;
 }
 .btn{
-    border: 1px solid black;
+    border: 1px solid grey;
     border-radius: 20px;
     padding:6px 9px;
     margin:4px;
     color: rgb(17, 17, 233);
     font-weight:bolder;
-    background-color: rgb(149, 222, 246);
-    
+    background-color:rgb(210, 228, 244);
+    cursor: pointer;
+}
 
+.btn:hover{
+    background-color: aquamarine;
 }

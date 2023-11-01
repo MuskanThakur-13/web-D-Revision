@@ -1,0 +1,33 @@
+:root{
+    --color:green;
+    --seccolor:rgb(148, 229, 148);
+    --defpad:23px;
+    --defop:0.4;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    background-color: var(--color);
+}
+ul{
+    display:flex;
+}
+ul li{
+    opacity: var(--defop);
+    list-style: none;
+    padding:var(--defpad); 
+    border:2px solid var(--seccolor) ;
+
+}
+
+ul li:first-child{
+    --color:rgb(234, 93, 168);
+    background-color: var(--color,orange); /*If  var is not available then orange colour will be applied*/
+}
+
+.container{
+    background-color:var(--seccolor);
+}

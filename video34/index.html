@@ -1,0 +1,42 @@
+<!-- #To use image link directly for img
+Select image and then right click and copy image address -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;/* container ke within elements fill kar sakte hai agar overflow ho rhe hai toh by using flow-root */
+        }
+        
+        img{
+            float:right;
+        }
+
+        .card{
+            border: 2px solid red;
+        }
+
+        .card:nth-child(3){
+            background-color: aqua;
+            clear:both; /*3 rd child ke left and right both pe koi bhi element nhi hoga,agar koi float ho bhi raha hai toh */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="https://img.freepik.com/premium-photo/young-man-rowing-boat-sea-looking-crescent-digital-art-style-illustration-painting-fantasy-illustration-man-boat_743201-6653.jpg" alt="" width="233px" >
+        <div class="card">card 1 Adfgergrd lkfjerljer dffgkjherigjeri dfjhijergr irhjiorjeior jghrighiorjgior jhuirhijbo iohiorjgio ijioreujfo amnbfyueryfh ciodsfjewiof ekjhuyjn </div>
+        <div class="card"><p> ipsum dolor sit amet consectetur adipisicing elit. Eius illo laboriosam similique ea, beatae nisi nemo tempora aperiam dolorem corporis laborum mollitia saepe velit labore minima a exercitationem numquam porro? Id, fuga officiis. Est impedit harum laborum saepe dolore, fugit illo explicabo perspiciatis!</p></div>
+        <div class="card"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, pariatur iste autem dolore fugiat nisi optio commodi deserunt ducimus beatae modi quibusdam laborum?</p></div>
+    </div>
+
+</body>
+
+</html>
+
